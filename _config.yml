@@ -1,0 +1,4 @@
+name: Ankur Sethi's Blog
+markdown: redcarpet
+pygments: true
+permalink: /:year/:month/:day/:title/
