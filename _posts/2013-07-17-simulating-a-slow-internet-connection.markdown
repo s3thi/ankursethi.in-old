@@ -1,15 +1,13 @@
 ---
 author: ankur
-comments: true
 date: 2013-07-17 15:56:14+00:00
 layout: post
 slug: simulating-a-slow-internet-connection
 title: Simulating a Slow Internet Connection
-wordpress_id: 245
 categories:
-- AngularJS
-- Django
-- Programming
+    - AngularJS
+    - Django
+    - Programming
 ---
 
 I am currently working on a single page web application written with AngularJS that communicates with a REST API written with Django and Tastypie. Since I run both the client and the server locally on my machine, every HTTP request that my AngularJS application makes receives a response from the REST API in tens of milliseconds. This is not ideal.
@@ -20,7 +18,7 @@ Unfortunately, if I run the application locally, it becomes impossible for me to
 
 After searching the Internet in vain for a solution that would let me simulate a "real" Internet connection from within my browser, I wrote a Django middleware that uses time.sleep() to delay each HTTP response that my application returns by 0 to 4 seconds.
 
-[code language="python"]
+{% highlight python %}
 import random
 import time
 
@@ -28,16 +26,16 @@ class SlowPony(object):
     def process_response(self, request, response):
         time.sleep(random.randint(0, 4))
         return response
-[/code]
+{% endhighlight %}
 
 Then I added this middleware to my MIDDLEWARE_CLASSES:
 
-[code language="python"]
+{% highlight python %}
 MIDDLEWARE_CLASSES = (
     # ...
     'my_application.middleware.SlowPony',
 )
-[/code]
+{% endhighlight %}
 
 I don't like this solution. For one, this does not cause any of the requests to time out, which happens frequently on mobile Internet connections. It's better than nothing, though.
 

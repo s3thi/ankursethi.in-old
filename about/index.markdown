@@ -1,11 +1,8 @@
 ---
 author: ankur
-comments: false
 date: 2013-02-26 05:56:30+00:00
 layout: page
-slug: about
 title: About
-wordpress_id: 9
 ---
 
 I'm Ankur Sethi, a freelance software developer from India. This is my website, and you are reading it. Smashing!

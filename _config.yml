@@ -1,4 +1,6 @@
 name: Ankur Sethi's Blog
+tagline: A campaign of shock and awe.
 markdown: redcarpet
 pygments: true
-permalink: /:year/:month/:day/:title/
+permalink: /:year/:month/:title/
+paginate: 5

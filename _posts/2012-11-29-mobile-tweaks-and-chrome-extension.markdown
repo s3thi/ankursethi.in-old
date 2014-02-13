@@ -1,13 +1,11 @@
 ---
 author: ankur
-comments: true
 date: 2012-11-29 09:43:40+00:00
 layout: post
 slug: mobile-tweaks-and-chrome-extension
 title: Mobile Tweaks and Chrome Extension
-wordpress_id: 14
 categories:
-- Programming
+    - Programming
 ---
 
 

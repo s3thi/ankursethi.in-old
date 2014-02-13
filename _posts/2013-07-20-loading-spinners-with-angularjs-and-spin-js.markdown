@@ -1,30 +1,28 @@
 ---
 author: ankur
-comments: true
 date: 2013-07-20 08:32:44+00:00
 layout: post
 slug: loading-spinners-with-angularjs-and-spin-js
 title: Loading Spinners With AngularJS and Spin.js
-wordpress_id: 252
 categories:
-- AngularJS
-- Programming
+    - AngularJS
+    - Programming
 ---
 
 [Spin.js](http://fgnass.github.io/spin.js/) is a tiny JavaScipt library that helps you create beautiful loading spinners on every web browser up from IE6. It is highly customizable, fast, and has zero dependencies. I'm using it in [my AngularJS application](http://github.com/GeneralMaximus/secondhand-web) to display loading spinners inside my `ng-view`s while my REST API responds with the data the view needs to render itself.
 
 I add a `viewLoading` boolean to the `$scope` of each controller that talks to the REST API. The initial value of `viewLoading` is `true`.
 
-[code language="javascript"]
+{% highlight javascript %}
 angular.module('MyApplication')
   .controller('MakesTonsOfAPICallsController', function($scope) {
     $scope.viewLoading = true;
   });
-[/code]
+{% endhighlight %}
 
 After all the API calls complete successfully, I set `viewLoading` to false.
 
-[code language="javascript"]
+{% highlight javascript %}
 angular.module('MyApplication')
   .controller('MakesTonsOfAPICallsController', function($scope, MyLargeModel) {
     $scope.viewLoading = true;
@@ -35,29 +33,29 @@ angular.module('MyApplication')
       $scope.viewLoading = false;
     });
   });
-[/code]
+{% endhighlight %}
 
-If I have to make multiple calls, I use the [`$q` service](http://docs.angularjs.org/api/ng.$q) to create a promise for each of them. Each promise is resolved or rejected depending on the status code that the API call returns. I then use `$q.all()` to call a function when all of the promises have been resolved. This function sets `viewLoading` to `false`. I will talk more about $q in another post, but here is a rather simplistic example for now:
+If I have to make multiple calls, I use the [$q service](http://docs.angularjs.org/api/ng.$q) to create a promise for each of them. Each promise is resolved or rejected depending on the status code that the API call returns. I then use `$q.all()` to call a function when all of the promises have been resolved. This function sets `viewLoading` to `false`. I will talk more about $q in another post, but here is a rather simplistic example for now:
 
-[code language="javascript"]
+{% highlight javascript %}
 $q.all([promise1, promise2 ... promiseN]).then(function(data) {
   $scope.viewLoading = false;
 });
-[/code]
+{% endhighlight %}
 
 I want the loading spinner to be displayed for as long as `$viewLoading` is `true`, and be replaced by the actual view content as soon as `viewLoading` becomes `false`. I use a directive to do this. This is what the markup looks like:
 
-[code language="html"]
+{% highlight html %}
 <div ng-controller="MakesTonsOfAPICallsController">
   <div my-loading-spinner="viewLoading">
     <!-- actual view content goes here. -->
   </div>
 </div>
-[/code]
+{% endhighlight %}
 
 And this is what the directive looks like:
 
-[code language="javascript"]
+{% highlight javascript %}
 angular.module('MyApplication')
   .directive('myLoadingSpinner', function() {
     return {
@@ -75,7 +73,7 @@ angular.module('MyApplication')
       }
     };
   });
-[/code]
+{% endhighlight %}
 
 For this to work correctly, the Spin.js code has to be loaded before the directive code.
 
@@ -83,12 +81,12 @@ The directive is restricted to attributes only and replaces the original content
 
 Before I explain the `link` function, take a look at the directive's template:
 
-[code language="html"]
+{% highlight html %}
 <div>
   <div ng-show="loading" class="my-loading-spinner-container"></div>
   <div ng-hide="loading" ng-transclude></div>
 </div>
-[/code]
+{% endhighlight %}
 
 The markup is simple enough. The `div` with class `my-loading-spinner-container` is displayed when `loading` is `true`, and hidden if it is `false`. The second `div` is hidden if `loading` is `true`, and displayed if it is `false`. The second `div` also uses `ng-transclude` to re-include into the page the original content that was replaced by our directive.
 

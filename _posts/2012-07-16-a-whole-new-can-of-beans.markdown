@@ -1,16 +1,12 @@
 ---
 author: ankur
-comments: true
 date: 2012-07-16 15:27:39+00:00
 layout: post
 slug: a-whole-new-can-of-beans
 title: A Whole New Can of Beans
-wordpress_id: 12
 categories:
-- Programming
+    - Programming
 ---
-
-
 
 I'm envious of people who have consistently posted to their blogs for years. I, too, have blogged semi-regularly over the years, but I've never managed to stick to a single blog for long.
 
@@ -33,5 +29,3 @@ If you go look at [the Can 'O Beans code on GitHub](http://github.com/GeneralMax
 Can 'O Beans as I'm using it now was "finished" a few weeks after I started building it, but I didn't deploy it for _months_ because I couldn't bring myself to dive into the big bad world of WSGI servers and reverse proxies and databases and what have you. Then last month, I found that I needed to deploy several Django apps for a project I'm working on. This forced me to sit down for three days and absorb everything I could about using Django in production. I wanted to experiment with what I had learned on my own server before I went live with it on the server my project is hosted on, so Can 'O Beans finally got a chance to shine.
 
 And kids, that is why AnkurSethi.in once again has the pleasure of hosting real content instead of an unfriendly white HTML page.
-
-

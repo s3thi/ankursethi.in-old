@@ -1,13 +1,11 @@
 ---
 author: ankur
-comments: true
 date: 2013-03-05 14:08:37+00:00
 layout: post
 slug: okay-wordpress-you-win-this-round
 title: Okay WordPress, You Win This Round
-wordpress_id: 43
 categories:
-- Meta
+    - Meta
 ---
 
 One of my biggest blogging crimes so far has been this: every time I get an itch to write a blog post, I start thinking of possible workflows I could use to make my writing process simpler. A few hours later, instead of the post I wanted, I have UI mockups for The Perfect Blogging App™ that will never be built. It's a disease, I tell ya.
@@ -16,9 +14,7 @@ In the summer of 2012, though, I did finally get around to building a blogging a
 
 Hacking on Can 'O Beans was a lot of fun, but it was only fun for the part of my brain that enjoyed engineering puzzles. The part that wanted to _just fucking write_ was frustrated with the whole deal.
 
-
-[![](http://ankursethi.in/wp-content/uploads/2013/03/Screen-Shot-2013-03-04-at-12.48.05-.png)](http://ankursethi.in/wp-content/uploads/2013/03/Screen-Shot-2013-03-04-at-12.48.05-.png)
-
+![Pretty, isn't it?]({{site.url}}/images/Screen-Shot-2013-03-04-at-12.48.05-.png)
 
 The astute reader may now ask why I had to go and write my own blogging app when I could just have used Wordpress like every other sane person. An year ago, I would have told said astute reader that Wordpress was a terrible piece of software. I would have gone on to mention that it was slow and unresponsive, that it had a cluttered UI that was anathema to the creative mind, that it was insecure, that it was impossible for a sane person to customize Wordpress because it was written in PHP, etc. etc.
 

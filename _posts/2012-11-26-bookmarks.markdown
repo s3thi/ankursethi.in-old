@@ -1,13 +1,11 @@
 ---
 author: ankur
-comments: true
 date: 2012-11-26 08:37:59+00:00
 layout: post
 slug: bookmarks
 title: Bookmarks
-wordpress_id: 25
 categories:
-- Programming
+    - Programming
 ---
 
 
