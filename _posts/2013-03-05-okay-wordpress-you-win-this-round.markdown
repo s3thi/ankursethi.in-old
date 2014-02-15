@@ -14,7 +14,7 @@ In the summer of 2012, though, I did finally get around to building a blogging a
 
 Hacking on Can 'O Beans was a lot of fun, but it was only fun for the part of my brain that enjoyed engineering puzzles. The part that wanted to _just fucking write_ was frustrated with the whole deal.
 
-![Pretty, isn't it?]({{site.url}}/images/Screen-Shot-2013-03-04-at-12.48.05-.png)
+[![Pretty, isn't it?]({{site.url}}/images/django-admin.png)]({{site.url}}/images/django-admin.png)
 
 The astute reader may now ask why I had to go and write my own blogging app when I could just have used Wordpress like every other sane person. An year ago, I would have told said astute reader that Wordpress was a terrible piece of software. I would have gone on to mention that it was slow and unresponsive, that it had a cluttered UI that was anathema to the creative mind, that it was insecure, that it was impossible for a sane person to customize Wordpress because it was written in PHP, etc. etc.
 

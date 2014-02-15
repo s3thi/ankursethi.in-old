@@ -17,6 +17,11 @@ body {
   height: 100%;
 }
 
+img {
+  height: 100%;
+  width: 100%;
+}
+
 header,
 nav {
   text-align: center;
@@ -26,7 +31,14 @@ pre {
   background-color: rgba(227, 50, 88, 0.1);
   border-radius: 5px;
   padding: 1em;
-  overflow: scroll;
+  overflow: auto;
+  word-wrap: normal;
+  white-space: pre;
+}
+
+pre,
+code {
+  font-family: "Source Code Pro", sans-serif;
 }
 
 .title .tagline {
