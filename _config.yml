@@ -1,5 +1,6 @@
 name: Ankur Sethi's Blog
 tagline: A campaign of shock and awe.
+url: http://ankursethi.in/
 markdown: redcarpet
 pygments: true
 permalink: /:year/:month/:title/
