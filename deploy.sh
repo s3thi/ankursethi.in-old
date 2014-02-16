@@ -1,0 +1,1 @@
+rsync -r -a -v --delete _site/ ankursethi.in:/var/www/ankursethi.in/
