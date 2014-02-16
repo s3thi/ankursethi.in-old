@@ -17,6 +17,10 @@ body {
   height: 100%;
 }
 
+.highlight {
+  font-size: 0.8em;
+}
+
 img {
   height: 100%;
   width: 100%;
