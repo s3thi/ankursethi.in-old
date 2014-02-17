@@ -6,3 +6,5 @@ pygments: true
 permalink: /:year/:month/:title/
 paginate: 5
 timezone: Asia/Kolkata
+exclude:
+    - deploy.sh
