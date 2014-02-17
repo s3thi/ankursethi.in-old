@@ -17,10 +17,6 @@ body {
   height: 100%;
 }
 
-.highlight {
-  font-size: 0.8em;
-}
-
 img {
   height: 100%;
   width: 100%;
@@ -31,18 +27,32 @@ nav {
   text-align: center;
 }
 
+.highlight {
+  font-size: 0.8em;
+}
+
 pre {
-  background-color: rgba(227, 50, 88, 0.1);
-  border-radius: 5px;
   padding: 1em;
   overflow: auto;
   word-wrap: normal;
   white-space: pre;
 }
 
+code {
+  font-size: 0.8em;
+  padding: 0 0.3em;
+}
+
 pre,
 code {
+  background-color: rgba(227, 50, 88, 0.1);
+  border-radius: 5px;
   font-family: "Source Code Pro", sans-serif;
+}
+
+pre code {
+  background-color: transparent;
+  font-size: 1em;
 }
 
 .title .tagline {
