@@ -12,7 +12,7 @@ The hardest thing to do after finishing a book is deciding which one you want to
 
 This is why I have made a reading list for this year, and it looks something like this:
 
-  * _The Essense of Camphor_ by Naiyer Masud
+  * _The Essence of Camphor_ by Naiyer Masud
   * _Shantaram_ by Gregory David Roberts
   * _Ready Player One_ by Ernest Cline
   * _Sea of Poppies_ by Amitav Ghosh
@@ -20,7 +20,7 @@ This is why I have made a reading list for this year, and it looks something lik
   * _The Shadow Lines_ by Amitav Ghosh
   * _In the Miso Soup_ by Ryu Murakami
   * _Coin Locker Babies_ by Ryu Murakami
-  * _Almost Transparent Blue_ by Ryu Murakami
+  * <s>_Almost Transparent Blue_</s> _Popular Hits of the Showa Era_ by Ryu Murakami
   * _Siddhartha_ by Herman Hesse
   * _Flowers for Algernon_ by Daniel Keyes
   * _Oryx and Crake_ by Margaret Atwood
@@ -37,3 +37,6 @@ This is why I have made a reading list for this year, and it looks something lik
   * _Tinker Tailor Soldier Spy_ by John Le Carré
   * _The Honourable Schoolboy_ by John Le Carré
   * _Smiley's People_ by John Le Carré
+
+
+**Update**: Since I couldn't find an electronic version of Ryu Murakami's _Almost Transparent Blue_, and the physical version was too expensive in India, I decided to replace it with _Popular Hits of the Showa Era_.
